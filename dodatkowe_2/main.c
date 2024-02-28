@@ -3,6 +3,7 @@
 
 int main()
 {
+    // Wariant 102
     float a, b, c;
     printf("Podaj liczbe zmiennoprzecinkowa a: ");
     scanf("%f", &a);
