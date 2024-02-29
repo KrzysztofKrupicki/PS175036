@@ -4,12 +4,15 @@
 int main()
 {
     int f1 = 0 , f2 = 1;
-    int i=0;
     printf("%d\n", f1);
-    while (i<9){
-        printf("%d\n", f2);
-        f2 = f1 + f2;
+    printf("%d\n", f2);
+    int f3 = f1 + f2;
+    int i = 0;
+    while (i < 8){
+        printf("%d\n", f3);
         f1 = f2;
+        f2 = f3;
+        f3 = f1 + f2;
         i++;
     }
     return 0;
