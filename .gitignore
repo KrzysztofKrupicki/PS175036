@@ -1,6 +1,5 @@
-.gitignore
+
 *.layout
 bin/
 obj/
 *.depend
-
