@@ -8,7 +8,7 @@ int main()
     scanf("%d", &n);
     int i = 1;
     int suma = 0;
-    while(i<n){
+    while(i<=n){
         suma += i;
         i++;
     }

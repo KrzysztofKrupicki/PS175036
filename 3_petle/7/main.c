@@ -11,13 +11,10 @@ int main()
         printf("Podaj liczbe calkowita: ");
         scanf("%d", &n);
     }
-    float pierwiastek = pow(n, 0.5);
-    int wynik;
-    if (pierwiastek-(int)pierwiastek != 0){
-        wynik = (int)pierwiastek + 1;
-    } else {
-        wynik = (int)pierwiastek;
+    int pierwiastek = 0;
+    while (pierwiastek * pierwiastek <= n){
+        pierwiastek++;
     }
-    printf("%d", wynik);
+    printf("Sufit pierwiastka z n: %d", pierwiastek);
     return 0;
 }

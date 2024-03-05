@@ -11,6 +11,11 @@ int main()
         printf("Podaj liczbe calkowita: ");
         scanf("%d", &n);
     }
-    printf("%d", (int)pow(n, 0.5));
+    int pierwiastek = 0;
+    while (pierwiastek * pierwiastek <= n){
+        pierwiastek++;
+    }
+    pierwiastek--;
+    printf("Podloga pierwiastka z n: %d", pierwiastek);
     return 0;
 }
