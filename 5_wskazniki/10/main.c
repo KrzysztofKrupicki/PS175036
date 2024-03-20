@@ -7,7 +7,7 @@ double subPtrs(double const *num1, double *const num2){
 
 int main()
 {
-    int a = 5, b = 3;
+    double a = 5, b = 3;
     printf("%d\n", subPtrs(&a, &b));
     return 0;
 }
