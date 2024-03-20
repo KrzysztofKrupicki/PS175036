@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Wariant 522
 void substractAndStore(int substractor, int *numberPtr){
     *numberPtr = *numberPtr - substractor;
 }
