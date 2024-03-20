@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int calculateGCD(n, m){
+int calculateGCD(int n, int m){
     while (m){
         int temp = n;
         n = m;

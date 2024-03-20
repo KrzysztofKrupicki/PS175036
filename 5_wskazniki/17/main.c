@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void swapSign(double *ptr1, double *ptr2){
-    if ((*ptr1 >= 0 && *ptr2 < 0) || (*ptr2 >= 0 && *ptr1 < 0)){
+    if ((*ptr1 > 0 && *ptr2 < 0) || (*ptr2 > 0 && *ptr1 < 0)){
         double temp = *ptr1;
         *ptr1 = *ptr2;
         *ptr2 = temp;
