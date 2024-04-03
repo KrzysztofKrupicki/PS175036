@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 int applyFunction(int (*func1)(int), int (*func2)(int), int n){
-    if ((func1(n) >0) && (func2(n) >0)) {
-        return 1;
+    for (int i=0; i<n; i++){
+        if ((func1(n) <0 || func2(n) <0) && (func1(n) >=0 || func2(n) >=0)) {
+            return 0;
+        }
     }
-    return 0;
+    return 1;
 }
 
 int fooA(int number){
