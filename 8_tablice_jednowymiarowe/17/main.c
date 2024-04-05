@@ -11,7 +11,7 @@ int findElement(int tab[], unsigned int n, int val, int (*operation)(int, int)){
 }
 
 int isEqual(int n1, int n2){
-    return n1 == n2;
+    return n1 % 5 == n2 % 5;
 }
 
 int main()

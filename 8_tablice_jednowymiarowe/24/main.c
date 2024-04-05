@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum_odd_indices(unsigned int n, int tab[n]){
+int sum_odd_indices(unsigned int n, int tab[]){
     int sum = 0;
     for (int i=1; i<n; i+=2){
         sum += tab[i];

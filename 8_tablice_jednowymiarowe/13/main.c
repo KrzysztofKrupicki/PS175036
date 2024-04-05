@@ -3,7 +3,7 @@
 
 int *shiftLeft(unsigned int n, int *tab){
     int *new_tab = malloc(n*sizeof(int));
-    for (int i=0; i<n; i++){
+    for (int i=0; i<n-1; i++){
         *(new_tab+i) = *(tab+i+1);
     }
     *(new_tab+n-1) = *(tab);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void reverseArr(unsigned int n, int tab[n]){
+void reverseArr(unsigned int n, int tab[]){
     for (int i = 0; i<n/2; i++){
         int temp = tab[i];
         tab[i] = tab[n-i-1];

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int maxValue(unsigned int n, int tab[n]){
+int maxValue(unsigned int n, int tab[]){
     int max = tab[0];
     for (int i = 1; i<n; i++){
         if (tab[i] > max){

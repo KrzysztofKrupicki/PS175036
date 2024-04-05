@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void shiftRight2(unsigned int n, int tab[n]){
+void shiftRight2(unsigned int n, int tab[]){
     int temp1 = tab[n-1];
     int temp2 = tab[n-2];
-    for (int i = n; i>=2; i--){
+    for (int i = n-1; i>=2; i--){
         tab[i] = tab[i-2];
     }
     tab[0] = temp2;
@@ -14,7 +14,7 @@ void shiftRight2(unsigned int n, int tab[n]){
 void shiftRight2UsingPointers(unsigned int n, int *tab){
     int temp1 = *(tab+n-1);
     int temp2 = *(tab+n-2);
-    for (int i = n; i>=2; i--){
+    for (int i = n-1; i>=2; i--){
         *(tab+i) = *(tab+i-2);
     }
     *tab = temp2;

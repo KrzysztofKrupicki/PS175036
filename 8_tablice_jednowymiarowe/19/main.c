@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int function19(unsigned int n, int tab[n]){
+int function19(unsigned int n, int tab[]){
     for (int i=0; i<(n/2); i++){
         if (tab[i] != tab[n-1-i]){
             return 0;

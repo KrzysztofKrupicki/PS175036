@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void double_odd_elements(unsigned int n, int tab[n]){
-    for (int i=1; i<n; i+=2){
-        tab[i] = tab[i]*2;
+void double_odd_elements(unsigned int n, int tab[]){
+    for (int i=1; i<n; i++){
+        if (tab[i] % 2 == 0){
+            tab[i] = tab[i]*2;
+        }
     }
 }
 

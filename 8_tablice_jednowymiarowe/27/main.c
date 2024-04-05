@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void increase_by_index(unsigned int n, int tab[n]){
+void increase_by_index(unsigned int n, int tab[]){
     for (int i=0; i<n; i++){
         tab[i] += i;
     }

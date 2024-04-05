@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void function23(unsigned int n, double tab1[n], double tab2[n], double tab3[n]){
+void function23(unsigned int n, double tab1[], double tab2[], double tab3[]){
     for (int i=0; i<n; i++){
         tab3[i] = tab1[i]*tab2[i];
     }

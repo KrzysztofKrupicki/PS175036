@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int function21(unsigned int n, int tab[n]){
+int function21(unsigned int n, int tab[]){
     int max = abs(tab[0]);
     int index = 0;
     for (int i=0; i<n; i++){

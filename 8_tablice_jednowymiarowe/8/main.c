@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int minValue(unsigned int n, int tab[n]){
+int minValue(unsigned int n, int tab[]){
     int min = tab[0];
     for (int i = 1; i<n; i++){
         if (tab[i] < min){

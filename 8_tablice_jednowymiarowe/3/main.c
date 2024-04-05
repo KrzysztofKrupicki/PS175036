@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumSqares(unsigned int n, int tab[n]){
+int sumSqares(unsigned int n, int tab[]){
     int suma = 0;
     for (int i = 0; i<n; i++){
         suma += tab[i]*tab[i];

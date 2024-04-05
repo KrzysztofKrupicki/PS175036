@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void shiftLeft(unsigned int n, float tab[n]){
+void shiftLeft(unsigned int n, float tab[]){
     float temp = tab[0];
     for (int i = 1; i<n; i++){
         tab[i-1] = tab[i];

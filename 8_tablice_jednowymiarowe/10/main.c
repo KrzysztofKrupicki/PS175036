@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int minIdxMax(unsigned int n, int tab[n]){
+int minIdxMax(unsigned int n, int tab[]){
     int min = tab[0];
     int index = 0;
     for (int i = 1; i<n; i++){
