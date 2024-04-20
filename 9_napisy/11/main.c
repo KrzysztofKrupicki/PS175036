@@ -4,7 +4,7 @@
 void rmLower(char text[]){
     int j = 0;
     for (int i = 0; text[i] != '\0'; i++){
-        if (text[i] >= 'a' && text[i] <= 'z'){
+        if (!(text[i] >= 'a' && text[i] <= 'z')){
             text[j] = text[i];
             j++;
         }

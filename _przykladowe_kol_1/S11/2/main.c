@@ -7,9 +7,9 @@ int main()
     scanf("%d", &n);
     scanf("%d", &m);
     int iloczyn = 1;
-    for (n; n<=m; n++){
-        if (n % 2 == 1){
-            iloczyn *= n;
+    for (int i = n; i<=m; i++){
+        if (i % 2 != 0){
+            iloczyn *= i;
         }
     }
     printf("%d", iloczyn);

@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum_odd_indices(unsigned int n, int tab[]){
-    int suma = 0;
-    for (int i =0; i<n; i++){
-        if (i % 2 == 1) suma += tab[i];
-    }
-    return suma;
-}
-
-int sum_odd_indicesUP(unsigned int n, int *tab){
+int sum_odd_indices(unsigned int n, int *tab){
     int suma = 0;
     for (int i =0; i<n; i++){
         if (i % 2 == 1) suma += *(tab+i);
@@ -28,6 +20,6 @@ int main()
     *(tabUP+2) = 1;
     *(tabUP+3) = 8;
     *(tabUP+4) = 2;
-    printf("%d\n", sum_odd_indicesUP(5, tabUP));
+    printf("%d\n", sum_odd_indices(5, tabUP));
     return 0;
 }

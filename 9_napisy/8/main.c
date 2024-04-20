@@ -5,6 +5,7 @@ void strCopyNew(char text1[], char text2[]){
     for (int i=0; text1[i] != '\0'; i++){
         text2[i] = text1[i];
     }
+    text[i] = '\0';
 }
 
 int main()

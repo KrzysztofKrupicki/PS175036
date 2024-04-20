@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int count_positive_elements(unsigned int n, int tab[]){
-    int counter = 0;
-    for (int i=0; i<n; i++){
-        if (tab[i]>0){
-            counter++;
-        }
-    }
-    return counter;
-}
-
-int count_positive_elementsUP(unsigned int n, int *tab){
+int count_positive_elements(unsigned int n, int *tab){
     int counter = 0;
     for (int i=0; i<n; i++){
         if (*(tab+i)>0){

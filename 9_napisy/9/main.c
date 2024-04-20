@@ -2,20 +2,11 @@
 #include <stdlib.h>
 
 void strNcopy(char nap1[], char nap2[], unsigned int n){
-    int counter = 0;
-    while (nap1[counter] != '\0'){
-        counter++;
+    int i;
+    for (i = 0; i < n && nap1[i] != '\0'; i++) {
+        nap2[i] = nap1[i];
     }
-    if (counter < n){
-        for (int i = 0; i < counter; i++){
-            nap2[i] = nap1[i];
-        }
-    } else {
-        for (int i = 0; i<n; i++){
-            nap2[i] = nap1[i];
-        }
-    }
-    nap2[counter] = '\0';
+    nap2[i] = '\0';
 }
 
 int main()

@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int zad5(unsigned int m, int n, int tab[]){
-    int counter = 0;
-    for (int i=0; i<m; i++){
-        if (tab[i]< n) counter++;
-    }
-    return counter;
-}
-
-int zad5UP(unsigned int m, int n, int *tab){
+int zad5(unsigned int m, int n, int *tab){
     int counter = 0;
     for (int i=0; i<m; i++){
         if (*(tab+i)< n) counter++;
@@ -33,6 +25,6 @@ int main()
     *(tabUP+5) = 12;
     m = 6;
     n = 10;
-    printf("%d\n", zad5UP(m, n, tabUP));
+    printf("%d\n", zad5(m, n, tabUP));
     return 0;
 }

@@ -1,24 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int zad5(unsigned int m, unsigned int n, int tab[]){
+int zad5(unsigned int m, unsigned int n, int *tab){
     if (n < 2) {
         printf("Blad: n>1");
-        return -1;
-    }
-    int iloczyn = 1;
-    for (int i = 0; i<m; i++){
-        if (tab[i]%n == 0){
-            iloczyn *= tab[i];
-        }
-    }
-    return iloczyn;
-}
-
-int zad5UP(unsigned int m, unsigned int n, int *tab){
-    if (n < 2) {
-        printf("Blad: n>1");
-        return -1;
+        exit(-1);
     }
     int iloczyn = 1;
     for (int i = 0; i<m; i++){
@@ -43,6 +29,6 @@ int main()
     *(tabUP+3) = 2;
     *(tabUP+4) = 3;
     *(tabUP+5) = 1;
-    printf("%d\n", zad5UP(m, n, tabUP));
+    printf("%d\n", zad5(m, n, tabUP));
     return 0;
 }
