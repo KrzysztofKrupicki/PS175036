@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-# Wariant 712
+// Wariant 712
 int find_max_odd(unsigned int n, int arr[]){
     int max = -1;
     for (int i = 0; i<n; i++){
