@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 void revCols(unsigned int n, unsigned int m, int tab[n][m]){
-    for (int i = 0; i<n; i++){
-        for (int j = 0; j<m/2; j++){
-            int temp = tab[i][m-j-1];
-            tab[i][m-j-1] = tab[i][j];
+    for (int i = 0; i<n/2; i++){
+        for (int j = 0; j<m; j++){
+            int temp = tab[n-i-1][j];
+            tab[n-i-1][j] = tab[i][j];
             tab[i][j] = temp;
         }
     }

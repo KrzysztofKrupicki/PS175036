@@ -5,9 +5,9 @@ void flipDiag(int **tab, unsigned int n, unsigned int m){
     if (n == m){
         for (int i = 0; i<n/2; i++){
             for (int j = i; j<n/2; j++){
-                int temp = *(*(tab+i)+j);
-                *(*(tab+i)+j) = *(*(tab+n-i-1)+m-j-1);
-                *(*(tab+n-i-1)+m-j-1) = temp;
+                int temp = tab[i][j];
+                tab[i][j] = tab[n-i-1][m-j-1];
+                tab[n-i-1][m-j-1] = temp;
             }
         }
     }
