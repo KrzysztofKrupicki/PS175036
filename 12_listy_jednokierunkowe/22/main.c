@@ -6,21 +6,16 @@ struct element {
     struct element * next;
 };
 
-void addFirst(struct element *list, int a){
-    if(list->next == NULL){
-        list->next = malloc(sizeof(struct element));
-        list->next->x = a;
-        list->next->next = NULL;
-    } else {
-        struct element *temp = malloc(sizeof(struct element));
-        temp->x = a;
-        temp->next = list->next;
-        list->next = temp;
-    }
+struct element *removeLast(struct element *list){
+    if(list->next == NULL) return NULL;
+    struct element *temp = list;
+    while(temp->next->next != NULL) temp = temp->next;
+    temp->next = NULL;
+    return list;
 }
 
 void printListWithHead(struct element *list){
-    if(list == NULL || list->next == NULL) printf("Lista jest pusta\n");
+    if(list->next == NULL) printf("Lista jest pusta\n");
     else {
         while(list->next != NULL){
             list = list->next;
@@ -41,7 +36,7 @@ int main()
     list->next->next->next->next = NULL;
     printf("Przed:\n");
     printListWithHead(list);
-    addFirst(list, 17);
+    list = removeLast(list);
     printf("Po:\n");
     printListWithHead(list);
     return 0;

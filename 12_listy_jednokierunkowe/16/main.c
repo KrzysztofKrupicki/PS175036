@@ -6,27 +6,25 @@ struct element {
     struct element * next;
 };
 
-void printOdd(struct element *list){
-    if(list->next == NULL) printf("Lista jest pusta\n");
-    else {
-        while(list->next != NULL){
-            list = list->next;
-            if (list->x % 2 != 0) printf("%d\n", list->x);
-        }
+int sum(struct element *list){
+    int result = 0;
+    while (list->next != NULL){
+        list = list->next;
+        if(list->x < 0) result += list->x;
     }
+    return result;
 }
 
 int main()
 {
     struct element *list = malloc(sizeof(struct element));
     list->next = malloc(sizeof(struct element));
-    list->next->x = 4;
+    list->next->x = -4;
     list->next->next = malloc(sizeof(struct element));
-    list->next->next->x = -5;
+    list->next->next->x = 5;
     list->next->next->next = malloc(sizeof(struct element));
-    list->next->next->next->x = 12;
+    list->next->next->next->x = -11;
     list->next->next->next->next = NULL;
-    printOdd(list);
+    printf("%d\n", sum(list));
     return 0;
 }
-

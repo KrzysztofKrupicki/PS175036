@@ -7,13 +7,13 @@ struct element {
 };
 
 struct element *createNoHead(){
-    struct element *newList = malloc(sizeof(struct element));
-    return newList;
+    return NULL;
 };
 
 int main()
 {
     struct element *nowa_lista = createNoHead();
+    nowa_lista = malloc(sizeof(struct element));
     nowa_lista->x = 5;
     nowa_lista->next = malloc(sizeof(struct element));
     nowa_lista->next->x = 12;

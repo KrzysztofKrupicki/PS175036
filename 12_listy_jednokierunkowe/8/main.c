@@ -8,13 +8,14 @@ struct element {
 
 struct element *createWithHead(){
     struct element *newList = malloc(sizeof(struct element));
-    newList->next = malloc(sizeof(struct element));
+    newList->next = NULL;
     return newList;
 };
 
 int main()
 {
     struct element *nowa_lista = createWithHead();
+    nowa_lista->next = malloc(sizeof(struct element));
     nowa_lista->next->x = 12;
     nowa_lista->next->next = malloc(sizeof(struct element));
     nowa_lista->next->next->x = 4;

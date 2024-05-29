@@ -7,12 +7,10 @@ struct element {
 };
 
 void printPos(struct element *list){
-    if(list != NULL){
-        while(list != NULL){
-            if(list->x > 0) printf("%d\n", list->x);
-            list = list->next;
-        }
-    } else printf("Lista jest pusta\n");
+    while(list != NULL){
+        if(list->x > 0) printf("%d\n", list->x);
+        list = list->next;
+    }
 }
 
 int main()
