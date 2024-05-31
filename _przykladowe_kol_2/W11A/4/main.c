@@ -12,7 +12,7 @@ struct Movie shortestDuration(struct Movie tab[], int size){
         if(tab[i].duration < shortest.duration) shortest = tab[i];
     }
     return shortest;
-};
+}
 
 int main()
 {

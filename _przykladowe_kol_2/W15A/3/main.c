@@ -13,7 +13,7 @@ int zadanie3(int **tab, int n, int m){
 
 int main()
 {
-    int **tab = (int**)malloc(sizeof(int)*4);
+    int **tab = (int**)malloc(sizeof(int*)*4);
     tab[0] = (int*)malloc(sizeof(int)*3);
     tab[1] = (int*)malloc(sizeof(int)*3);
     tab[2] = (int*)malloc(sizeof(int)*3);

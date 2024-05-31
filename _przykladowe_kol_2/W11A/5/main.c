@@ -8,7 +8,7 @@ struct element{
 
 void printLessThan5(struct element *list){
     while(list != NULL){
-        if(list->x < 5) printf("%d\n", list->x);
+        if(list->x > 5) printf("%d\n", list->x);
         list = list->next;
     }
 }

@@ -20,7 +20,7 @@ void addFirst(struct element *list, int a){
 }
 
 void printListWithHead(struct element *list){
-    if(list == NULL || list->next == NULL) printf("Lista jest pusta\n");
+    if(list->next == NULL) printf("Lista jest pusta\n");
     else {
         while(list->next != NULL){
             list = list->next;
